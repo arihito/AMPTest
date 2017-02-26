@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html amp lang="ja-JP">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+    <title>AMP Test</title>
+    <link rel="canonical" href="index.html">
+    <style amp-custom>
+      body {
+        color: red;
+      }
+    </style>
+    <style amp-boilerplate>
+      body {
+        -webkit-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
+        -moz-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
+        -ms-animation: -amp-start 8s steps(1,end) 0s 1 normal both;
+        animation: -amp-start 8s steps(1,end) 0s 1 normal both
+      }
+      @-webkit-keyframes -amp-start {from{visibility:hidden}to{visibility:visible}}
+      @-moz-keyframes -amp-start {from{visibility:hidden}to{visibility:visible}}
+      @-ms-keyframes -amp-start {from{visibility:hidden}to{visibility:visible}}
+      @-o-keyframes -amp-start {from{visibility:hidden}to{visibility:visible}}
+      @keyframes -amp-start {from{visibility:hidden}to{visibility:visible}}
+    </style>
+    <noscript>
+      <style amp-boilerplate>
+        body {
+          -webkit-animation: none;
+          animation: none;
+        }
+      </style>
+    </noscript>
+    <script async src="http://cdn.ampproject.org/v0.js"></script>
+  </head>
+  <body>
+    <h1>AMP Test</h1>
+    <amp-img src="images/01.jpg" width="200"></amp-img>
+  </body>
+</html>
